@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Abdigani Musse Omar (Galde) - Computer Science & Engineering student at Islamic University of Technology, building software, web applications and backend systems.">
+   <meta name="robots" content="index, follow">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Abdigani Musse Omar (Galde)">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+   <!--=============== GOOGLE FONTS ===============-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="style.css">
+
+   <title>Abdigani Musse Omar (Galde) | CSE Student & Developer</title>
+</head>
+<body>
+   <!--==================== HEADER & NAV ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#home" class="nav__logo"><span>AG</span>Abdi&nbsp;Gani</a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="#home" class="nav__link active-link">Home</a></li>
+               <li><a href="#projects" class="nav__link">Projects</a></li>
+               <li><a href="#skills" class="nav__link">Skills</a></li>
+               <li><a href="#education" class="nav__link">Education</a></li>
+               <li><a href="#contact" class="nav__contact">Contact me</a></li>
+            </ul>
+
+            <button class="nav__close" id="nav-close" aria-label="Close menu">
+               <i class="ri-close-large-line"></i>
+            </button>
+         </div>
+
+         <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+            <i class="ri-menu-line"></i>
+         </button>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+
+      <!--==================== HOME SECTION ====================-->
+      <section class="home section" id="home">
+         <div class="blob-big home__blob-1"></div>
+         <div class="blob-small home__blob-2"></div>
+
+         <div class="home__container container grid">
+            <div class="home__data reveal">
+               <p class="home__subtitle">Hi! I'm Abdi Gani — Based in Dhaka, Bangladesh</p>
+               <h1 class="home__title">Building Software &<br>
+                  <span id="home-typed">Web Applications</span>
+               </h1>
+               <p class="home__description">
+                  A Computer Science & Engineering student turning ideas into practical,
+                  well-built systems — one project at a time.
+               </p>
+            </div>
+
+            <div class="home__image-wrapper reveal">
+               <div class="home__card">
+                  <picture>
+                     <source srcset="assets/profile.webp" type="image/webp">
+                     <img src="assets/profile.jpg" alt="Abdigani Musse Omar (Galde)" class="home__img" width="280" height="280" loading="eager" fetchpriority="high" decoding="async">
+                  </picture>
+               </div>
+
+               <a href="#projects" class="home__circle" aria-label="View my projects">
+                  <svg class="home__circle-text" viewBox="0 0 200 200">
+                     <path id="circlePath" fill="none" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+                     <text>
+                        <textPath href="#circlePath">VIEW MY WORK • VIEW MY WORK • </textPath>
+                     </text>
+                  </svg>
+                  <i class="ri-arrow-right-up-line home__circle-icon"></i>
+               </a>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== ABOUT SECTION ====================-->
+      <section class="about section">
+         <div class="about__container container grid">
+            <h2 class="about__title reveal">
+               A 4th-semester CSE student who enjoys <span>backend engineering</span>
+               and <span>building things</span>, curious, disciplined, and always learning.
+            </h2>
+
+            <div class="about__data reveal">
+               <p class="about__description">
+                  My interests sit at the intersection of software development, databases,
+                  networking, and secure web applications. My portfolio grows with me —
+                  new projects and skills are added as I progress through my degree.
+               </p>
+               <a href="#contact" class="button">
+                  Contact me <i class="ri-arrow-right-up-line"></i>
+               </a>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== WORK / PROJECTS SECTION ====================-->
+      <section class="work section" id="projects">
+         <h2 class="section__title reveal">Selected <span>Projects</span></h2>
+
+         <div class="work__container container">
+            <div class="swiper work__swiper">
+               <div class="swiper-wrapper">
+
+                  <article class="work__card swiper-slide">
+                     <div class="work__preview work__preview--app">
+                        <span class="work__preview-dot"></span><span class="work__preview-dot"></span><span class="work__preview-dot"></span>
+                        <div class="work__preview-body">
+                           <div class="work__preview-side"></div>
+                           <div class="work__preview-main">
+                              <span></span><span></span><span></span>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="https://iut-app.onrender.com" target="_blank" rel="noopener" class="work__link" aria-label="Open live demo">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                     <span class="work__number">01</span>
+                     <h3 class="work__name">IUT Appointment Management System</h3>
+                     <p class="work__description">
+                        Role-based booking platform for students, officers, and admins — approvals,
+                        notifications, and scheduling built with Python, Flask, and SQLAlchemy.
+                     </p>
+                  </article>
+
+                  <article class="work__card swiper-slide">
+                     <div class="work__preview work__preview--code">
+                        <i class="ri-braces-line"></i>
+                     </div>
+                     <span class="work__link work__link--static"><i class="ri-arrow-right-up-line"></i></span>
+                     <span class="work__number">02</span>
+                     <h3 class="work__name">Data Structures & Algorithms</h3>
+                     <p class="work__description">
+                        Academic implementations covering linked lists, stacks, balanced trees,
+                        Huffman coding, Dijkstra's algorithm, and related problem-solving.
+                     </p>
+                  </article>
+
+                  <article class="work__card swiper-slide">
+                     <div class="work__preview work__preview--db">
+                        <i class="ri-database-2-line"></i>
+                     </div>
+                     <span class="work__link work__link--static"><i class="ri-arrow-right-up-line"></i></span>
+                     <span class="work__number">03</span>
+                     <h3 class="work__name">Database Systems</h3>
+                     <p class="work__description">
+                        Practical work with relational databases — SQL, table design, triggers,
+                        PL/pgSQL, and secure database interaction.
+                     </p>
+                  </article>
+
+                  <article class="work__card swiper-slide">
+                     <div class="work__preview work__preview--cc">
+                        <i class="ri-terminal-box-line"></i>
+                     </div>
+                     <span class="work__link work__link--static"><i class="ri-arrow-right-up-line"></i></span>
+                     <span class="work__number">04</span>
+                     <h3 class="work__name">Programming Projects</h3>
+                     <p class="work__description">
+                        A growing collection of C, C++, Python, and web-development exercises
+                        focused on clean logic and practical implementation.
+                     </p>
+                  </article>
+
+               </div>
+            </div>
+
+            <div class="swiper-pagination work__pagination"></div>
+         </div>
+      </section>
+
+      <!--==================== SERVICES / WHAT I DO SECTION ====================-->
+      <section class="services section" id="services">
+         <h2 class="section__title reveal"><span>What</span> I Do</h2>
+
+         <div class="services__container container grid">
+
+            <div class="services__card">
+               <button class="services__header">
+                  <i class="ri-server-line services__icon"></i>
+                  <h3 class="services__name">Backend Development</h3>
+                  <i class="ri-add-line services__toggle"></i>
+               </button>
+               <div class="services__data">
+                  <p class="services__description">
+                     Building reliable server-side logic and APIs with role-based access,
+                     authentication, and clean data flow.
+                  </p>
+                  <ul class="services__list">
+                     <li><i class="ri-checkbox-circle-line"></i>Flask & Python</li>
+                     <li><i class="ri-checkbox-circle-line"></i>REST-style routing</li>
+                     <li><i class="ri-checkbox-circle-line"></i>Auth with Flask-Login</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="services__card">
+               <button class="services__header">
+                  <i class="ri-code-s-slash-line services__icon"></i>
+                  <h3 class="services__name">Web Development</h3>
+                  <i class="ri-add-line services__toggle"></i>
+               </button>
+               <div class="services__data">
+                  <p class="services__description">
+                     Turning designs and requirements into responsive, functional interfaces
+                     that are simple to use.
+                  </p>
+                  <ul class="services__list">
+                     <li><i class="ri-checkbox-circle-line"></i>HTML, CSS & JavaScript</li>
+                     <li><i class="ri-checkbox-circle-line"></i>Responsive layouts</li>
+                     <li><i class="ri-checkbox-circle-line"></i>Template rendering (Jinja)</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="services__card">
+               <button class="services__header">
+                  <i class="ri-database-2-line services__icon"></i>
+                  <h3 class="services__name">Database Design</h3>
+                  <i class="ri-add-line services__toggle"></i>
+               </button>
+               <div class="services__data">
+                  <p class="services__description">
+                     Designing relational schemas and writing efficient, secure queries for
+                     real-world data.
+                  </p>
+                  <ul class="services__list">
+                     <li><i class="ri-checkbox-circle-line"></i>SQL & PostgreSQL</li>
+                     <li><i class="ri-checkbox-circle-line"></i>SQLAlchemy ORM</li>
+                     <li><i class="ri-checkbox-circle-line"></i>Triggers & PL/pgSQL</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="services__card">
+               <button class="services__header">
+                  <i class="ri-lightbulb-flash-line services__icon"></i>
+                  <h3 class="services__name">Problem Solving</h3>
+                  <i class="ri-add-line services__toggle"></i>
+               </button>
+               <div class="services__data">
+                  <p class="services__description">
+                     Applying data structures and algorithms to write efficient, well-reasoned
+                     solutions to real problems.
+                  </p>
+                  <ul class="services__list">
+                     <li><i class="ri-checkbox-circle-line"></i>C / C++ / Python</li>
+                     <li><i class="ri-checkbox-circle-line"></i>DSA fundamentals</li>
+                     <li><i class="ri-checkbox-circle-line"></i>Clean, tested logic</li>
+                  </ul>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <!--==================== SKILLS SECTION ====================-->
+      <section class="skills section" id="skills">
+         <h2 class="section__title reveal">My <span>Skills</span></h2>
+         <p class="skills__description">
+            The tools and technologies I'm learning and building with, from core programming
+            to databases, the web, and the workflow that ties it together.
+         </p>
+
+         <div class="skills__container container grid">
+
+            <div class="skills__card">
+               <div class="skills__title">
+                  <i class="ri-terminal-line"></i>
+                  <h3>Programming</h3>
+               </div>
+               <div class="skills__list">
+                  <span><i class="ri-code-line"></i>C</span>
+                  <span><i class="ri-code-line"></i>C++</span>
+                  <span><i class="ri-code-line"></i>Python</span>
+                  <span><i class="ri-code-line"></i>SQL</span>
+                  <span><i class="ri-code-line"></i>JavaScript</span>
+               </div>
+            </div>
+
+            <div class="skills__card">
+               <div class="skills__title">
+                  <i class="ri-global-line"></i>
+                  <h3>Web Development</h3>
+               </div>
+               <div class="skills__list">
+                  <span><i class="ri-html5-line"></i>HTML</span>
+                  <span><i class="ri-css3-line"></i>CSS</span>
+                  <span><i class="ri-javascript-line"></i>JavaScript</span>
+                  <span><i class="ri-flask-line"></i>Flask</span>
+                  <span><i class="ri-links-line"></i>SQLAlchemy</span>
+               </div>
+            </div>
+
+            <div class="skills__card">
+               <div class="skills__title">
+                  <i class="ri-database-2-line"></i>
+                  <h3>Databases</h3>
+               </div>
+               <div class="skills__list">
+                  <span><i class="ri-file-list-3-line"></i>SQLite</span>
+                  <span><i class="ri-database-line"></i>PostgreSQL</span>
+                  <span><i class="ri-node-tree"></i>Relational Design</span>
+                  <span><i class="ri-code-box-line"></i>PL/pgSQL</span>
+               </div>
+            </div>
+
+            <div class="skills__card">
+               <div class="skills__title">
+                  <i class="ri-tools-line"></i>
+                  <h3>Tools & Concepts</h3>
+               </div>
+               <div class="skills__list">
+                  <span><i class="ri-git-branch-line"></i>Git</span>
+                  <span><i class="ri-github-line"></i>GitHub</span>
+                  <span><i class="ri-code-s-slash-line"></i>VS Code</span>
+                  <span><i class="ri-stack-line"></i>OOP</span>
+                  <span><i class="ri-share-forward-line"></i>DSA</span>
+                  <span><i class="ri-wifi-line"></i>Networking</span>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <!--==================== RESEARCH & INTERESTS SECTION ====================-->
+      <section class="interests section" id="research">
+         <h2 class="section__title reveal"><span>What</span> I'm Exploring</h2>
+
+         <div class="interests__container container">
+            <div class="swiper interests__swiper">
+               <div class="swiper-wrapper">
+
+                  <article class="interests__card swiper-slide">
+                     <span class="interests__number">01</span>
+                     <i class="ri-brain-line interests__icon"></i>
+                     <h3 class="interests__title">Artificial Intelligence</h3>
+                     <p class="interests__description">
+                        Exploring intelligent systems and how AI can be applied to practical problems.
+                     </p>
+                  </article>
+
+                  <article class="interests__card swiper-slide">
+                     <span class="interests__number">02</span>
+                     <i class="ri-stack-line interests__icon"></i>
+                     <h3 class="interests__title">Software Engineering</h3>
+                     <p class="interests__description">
+                        Designing maintainable, secure, and useful software systems.
+                     </p>
+                  </article>
+
+                  <article class="interests__card swiper-slide">
+                     <span class="interests__number">03</span>
+                     <i class="ri-router-line interests__icon"></i>
+                     <h3 class="interests__title">Computer Networks</h3>
+                     <p class="interests__description">
+                        Learning how modern networks communicate, scale, and remain secure.
+                     </p>
+                  </article>
+
+                  <article class="interests__card swiper-slide">
+                     <span class="interests__number">04</span>
+                     <i class="ri-shield-keyhole-line interests__icon"></i>
+                     <h3 class="interests__title">Web App Security</h3>
+                     <p class="interests__description">
+                        Understanding authentication, authorization, and defensive development.
+                     </p>
+                  </article>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== EDUCATION SECTION ====================-->
+      <section class="education section" id="education">
+         <h2 class="section__title reveal">My <span>Education</span></h2>
+
+         <div class="education__container container">
+            <div class="education__item">
+               <span class="education__dot"></span>
+               <div class="education__data">
+                  <p class="education__meta">Current — 4th Semester</p>
+                  <h3 class="education__school">Islamic University of Technology</h3>
+                  <p class="education__degree">B.Sc. in Computer Science and Engineering</p>
+               </div>
+            </div>
+
+            <div class="education__courses">
+               <span>Data Structures & Algorithms</span>
+               <span>Database Management Systems</span>
+               <span>Digital Logic Design</span>
+               <span>Discrete Mathematics</span>
+               <span>Calculus</span>
+               <span>Linear Algebra</span>
+               <span>Probability & Statistics</span>
+               <span>Object-Oriented Programming</span>
+               <span>Computer Programming</span>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== CONTACT SECTION ====================-->
+      <section class="contact section" id="contact">
+         <h2 class="section__title reveal">Contact <span>Me</span></h2>
+
+         <div class="contact__container container grid">
+            <form action="#" class="contact__form" id="contact-form">
+               <div class="contact__inputs">
+                  <div class="contact__box">
+                     <input type="text" name="user_name" placeholder=" " class="contact__input" id="contact-name" required>
+                     <label for="contact-name" class="contact__label">Name</label>
+                  </div>
+                  <div class="contact__box">
+                     <input type="email" name="user_email" placeholder=" " class="contact__input" id="contact-email" required>
+                     <label for="contact-email" class="contact__label">Email</label>
+                  </div>
+                  <div class="contact__box contact__area">
+                     <textarea name="user_message" placeholder=" " class="contact__input" id="contact-message" required></textarea>
+                     <label for="contact-message" class="contact__label">Message</label>
+                  </div>
+               </div>
+
+               <p class="contact__message" id="contact-message-status"></p>
+
+               <button type="submit" class="button contact__button">
+                  Send Message <i class="ri-arrow-right-up-line"></i>
+               </button>
+            </form>
+
+            <div class="contact__data">
+               <a href="mailto:musseomar56@iut-dhaka.edu" class="contact__info">
+                  <div class="contact__info-icon"><i class="ri-mail-line"></i></div>
+                  <div>
+                     <h3 class="contact__info-title">Email</h3>
+                     <p class="contact__info-text">musseomar56@iut-dhaka.edu</p>
+                  </div>
+               </a>
+
+               <a href="https://github.com/AbdiqanigaldeAbdiqanigalde" target="_blank" rel="noopener" class="contact__info">
+                  <div class="contact__info-icon"><i class="ri-github-line"></i></div>
+                  <div>
+                     <h3 class="contact__info-title">GitHub</h3>
+                     <p class="contact__info-text">@AbdiqanigaldeAbdiqanigalde</p>
+                  </div>
+               </a>
+
+               <a href="https://www.linkedin.com/in/c-qani-galde-031a17429" target="_blank" rel="noopener" class="contact__info">
+                  <div class="contact__info-icon"><i class="ri-linkedin-box-line"></i></div>
+                  <div>
+                     <h3 class="contact__info-title">LinkedIn</h3>
+                     <p class="contact__info-text">c-qani-galde</p>
+                  </div>
+               </a>
+
+               <a href="#" class="contact__info contact__info--static">
+                  <div class="contact__info-icon"><i class="ri-map-pin-line"></i></div>
+                  <div>
+                     <h3 class="contact__info-title">Location</h3>
+                     <p class="contact__info-text">Dhaka, Bangladesh</p>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container">
+         <h2 class="footer__title reveal">
+            LET'S BUILD SOMETHING USEFUL AND START YOUR NEXT PROJECT WITH ABDI GANI.
+         </h2>
+
+         <div class="footer__group">
+            <ul class="footer__links">
+               <li><a href="#projects" class="footer__link">Projects</a></li>
+               <li><a href="#skills" class="footer__link">Skills</a></li>
+               <li><a href="#education" class="footer__link">Education</a></li>
+            </ul>
+
+            <div class="footer__socials">
+               <a href="https://github.com/AbdiqanigaldeAbdiqanigalde" target="_blank" rel="noopener" aria-label="GitHub"><i class="ri-github-line"></i></a>
+               <a href="https://www.linkedin.com/in/c-qani-galde-031a17429" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+               <a href="https://www.facebook.com/share/1Q8LJQBFJu/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
+               <a href="mailto:musseomar56@iut-dhaka.edu" aria-label="Email"><i class="ri-mail-line"></i></a>
+            </div>
+         </div>
+
+         <span class="footer__copy">&#169; 2026 Abdigani Musse Omar (Galde). All Rights Reserved.</span>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up" aria-label="Scroll up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+   <!--=============== TYPED JS ===============-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="script.js"></script>
+</body>
+</html>
